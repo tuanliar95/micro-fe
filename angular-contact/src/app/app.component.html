@@ -1,0 +1,31 @@
+<div class="w-screen flex items-center justify-center my-20 gap-10">
+  <a href="https://angular.io" target="_blank">
+    <img
+      [src]="angularIcon"
+      class="w-40 h-40 hover:rotate-180 transition-transform duration-1000"
+      alt="Angular logo"
+    />
+  </a>
+  <a href="https://webpack.js.org/" target="_blank">
+    <img
+      [src]="webpackIcon"
+      class="w-40 h-40 hover:rotate-180 transition-transform duration-1000"
+      alt="Webpack logo"
+    />
+  </a>
+</div>
+<div class="w-screen mt-10 items-center flex justify-center gap-4">
+  <button
+    class="border-2 p-2 rounded-md hover:border-blue-800 transition"
+    (click)="increase()"
+  >
+    Increase
+  </button>
+  <button
+    class="border-2 p-2 rounded-md hover:border-blue-800 transition"
+    (click)="decrease()"
+  >
+    Decrease
+  </button>
+  <p>{{ counter$ | async }}</p>
+</div>

@@ -1,0 +1,33 @@
+{
+  "name": "micro-fe-workspace",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "node tasks/serve.js",
+    "build": "node tasks/build.js"
+  },
+  "keywords": [
+    "micro frontend",
+    "multi framework",
+    "micro frontend distributed",
+    "microfrontend",
+    "micro frontend with shadow dom",
+    "module federation",
+    "micro frontend with module federation",
+    "shadow dom"
+  ],
+  "author": "quangnv13",
+  "license": "ISC",
+  "devDependencies": {
+    "cli-progress": "^3.11.2",
+    "concurrently": "^7.6.0",
+    "execa": "^6.1.0",
+    "inquirer": "8.2.5",
+    "listr": "^0.14.3"
+  },
+  "dependencies": {
+    "chalk": "4",
+    "rxjs": "^7.8.0"
+  }
+}
