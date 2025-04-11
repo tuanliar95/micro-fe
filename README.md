@@ -79,6 +79,3 @@ I config/setup default projects for each supported framework. You need follow co
 
 ![Logo](https://i.ibb.co/ns03rLg/micro-fe-architect.jpg)
 
-## Support
-
-For support, email quangnv1311@gmail.com or create an issue in this repo.
