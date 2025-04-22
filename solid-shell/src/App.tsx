@@ -1,5 +1,5 @@
 import { A, Route, Routes } from "@solidjs/router";
-import { Component, createSignal, lazy, onCleanup } from "solid-js";
+import { Component, createSignal, lazy, onCleanup, Suspense } from "solid-js";
 import { baseConfig } from "./config";
 import windowStore from "../../share/store/store";
 import { tap } from "rxjs";
@@ -27,7 +27,7 @@ const App: Component = () => {
     storeSubscription.unsubscribe();
   });
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
       <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
         <div class="container flex flex-wrap items-center justify-between mx-auto">
           <a
@@ -109,7 +109,7 @@ const App: Component = () => {
           <Route path="/about" component={SolidAbout}></Route>
         </Routes>
       </div>
-    </>
+    </Suspense>
   );
 };
 
